@@ -1,0 +1,114 @@
+ * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #myCanvas {
+      margin-top: 5%;
+      background-color: #A9F5D0;
+      display: inline-block;
+      text-align: center; 
+      border: solid 1px blue;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /*Lugar donde se pide que pulse el boton de empezar juego*/
+    #primeraPantalla {
+      width: 100%;
+      height: 100%;
+      background-color: #A9F5D0;
+      text-align: center;
+      /*Sirve para cambiar de pagina (si no se amontonaba la info)*/
+      overflow: hidden;
+    }
+
+    /*Lugar donde se pide que introduzca nombre y empiece partida*/
+    #segundaPantalla {
+      width: 100%;
+      height: 100%;
+      background-color: #A9F5D0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /*Aviso de que ha ganado la partida*/
+    #victoria{
+      width: 100%;
+      height: 0%;
+      background-color: pink;
+      text-align: center;
+      font-size: 10px;
+    }
+    
+    /*Titulo de la primera pantalla*/
+    #bienvenida {
+      color: black;
+      font-size: 50px;
+      padding-top: 10%;
+    }
+
+    /*Titulo de la segunda pantalla*/
+    #introducirNombre {
+      color: black;
+      font-size: 50px;
+      padding-top: 5%;
+    }
+
+    /*Botones de comenzar la partida*/
+    .boton {
+      width: 180px;
+      height: 80px;
+      border: none;
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+    /*boton que da comienzo a la partida*/
+    #Jugar {
+      width: 180px;
+      height: 80px;
+      border: none;
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+    /*Lugar donde se pide el nombre de usuario*/
+    #player {
+      width: 200px;
+      height: 40px;
+      background-color: white;
+      color: black;
+      font-size: 15px;
+      margin-top: 5%;
+    }
+ 
+    /*Pantalla donde se juega*/
+    #pantallaJuego {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #A9F5D0;
+    }
+
+    /*Apartado donde se recoge la puntuacion, el nombre del jugador, las vidas*/
+    .marcador {
+      width: 25%;
+      height: 5%;
+      text-align: center;
+      float: left;
+    }
+
+    /*Lugar donde se indica la puntuacion*/
+    .UserScoreLives {
+      font-size: 20px;
+    }
+
+    /*lugar donde se indica el numeero de vidas restantes*/
+    .CurrentUserScoreLives {
+      font-size: 20px;
+    }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Juego</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+  <!--Aqui introduzco el audio del juego-->
+  <audio id="musica">
+    <source src="musica/mariokart.mp3" type="audio/mp3">
+  </audio>
+  <audio id="pum">
+    <source src="musica/pum.wav" type="audio/wav">
+  </audio>
+
+  <!--Aviso de que se ha ganado la partida-->
+  <div id="Ganador">
+    <h1 id="Has ganado!!"></h1>
+  </div>
+  <!--Pantalla de bienvenida al juego -->
+  <div id="primeraPantalla">
+    <h1 id="bienvenida">Bienvenido al juego!!!</h1>
+    <button id="btnIntro" class="boton" onclick="pagina1()">Comenzar</button>
+  </div>
+  <!--pantalla de introducir datos-->
+  <div id="segundaPantalla">
+    <h1 id="introducirNombre">¿Cómo te llamas?</h1>
+    <input type="text" id="player">
+    <br>
+    <!--boton que da comienzo al juego-->
+    <button id="Jugar" class="boton" onclick="pagina2()">A jugar!!</button>
+    <br>
+  </div>
+
+  <!--pantalla donde se juega-->
+  <div id="pantallaJuego">
+    <!--lugar donde se indica el nombre del jugador, la puntuacion, las vidas-->
+    <div class="marcador">
+      <h2 class="UserScoreLives">JUGADOR</h2>
+      <h3 class="CurrentUserScoreLives" id="jugador"></h2>
+    </div>
+
+    <div class="marcador">
+      <h3 class="UserScoreLives">VIDAS</h2>
+      <h2 class="CurrentUserScoreLives" id="vidas">3</h2>
+    </div>
+
+    <div class="marcador">
+      <h3 class="UserScoreLives">PUNTUACIÓN</h2>
+      <h2 class="CurrentUserScoreLives" id="puntuacion">50</h2>
+    </div>
+
+    <canvas id="myCanvas" width="" height=""></canvas>
+
+  </div>
+  
+  <!--Lugar donde se encuentra el codigo de js-->
+  <script type="text/javascript" src="Javascript.js"></script>
+</body>
+</html>
